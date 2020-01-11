@@ -10,7 +10,7 @@ from . models import Palettes
 def home(request):
     """Home page view for palettes app"""
 
-    # Import dummy data
+    # Import data from database and pass to palettes/home.html
     context = {
         'palettes_content' : Palettes.objects.all()
     }
