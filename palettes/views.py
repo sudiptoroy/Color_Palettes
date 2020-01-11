@@ -5,20 +5,7 @@ from . models import Palettes
 # Create your views here.
 
 # Dummy data
-"""palettes = [
-    {
-        'author' : 'Sudipto Roy',
-        'title' : 'Gray Accent',
-        'content' : '#32a852,#32a852,#32a852,#32a852,#32a852,#32a852',
-        'date_posted' : 'January 11, Saterday'
-    },
-    {
-        'author' : 'Jane Doe',
-        'title' : 'Red Accent',
-        'content' : '#32a852,#32a852,#32a852,#32a852,#32a852,#32a852',
-        'date_posted' : 'January 11, Saterday'
-    } 
-]"""
+
 
 def home(request):
     """Home page view for palettes app"""
