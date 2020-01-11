@@ -2,8 +2,15 @@
 {% block content %}
     <!-- Loop through the palettes in palettes_content passed from palettes.views -->
     {% for palettes in palettes_content %}
-        <h2>{{ palettes.title }}</h2>
-        <p>{{ palettes.author }} on {{ palettes.date_posted }}</p>  
-        <p>{{ palettes.content }}</p>       
+    <article class="media content-section">
+        <div class="media-body">
+          <div class="article-metadata">
+            <a class="mr-2" href="#">{{ palettes.author }}</a>
+            <small class="text-muted">{{ palettes.date_posted }}</small>
+          </div>
+          <h2><a class="article-title" href="#">{{ palettes.title }}</a></h2>
+          <p class="article-content">{{ palettes.content }}</p>
+        </div>
+    </article>     
     {% endfor %}
 {% endblock content %}
