@@ -1,5 +1,7 @@
 {% extends 'palettes/base.html' %}
+{% load static %}
 {% block content %}
+    <link rel="stylesheet" type="text/css" href="{% static 'palettes/box.css' %}">
     <!-- Loop through the palettes in palettes_content passed from palettes.views -->
     {% for palettes in palettes_content %}
     <article class="media content-section">
@@ -10,7 +12,11 @@
           </div>
           <h3><a class="article-title" href="#">{{ palettes.title }}</a></h3>
           <p class="article-content">{{ palettes.content }}</p>
+          <!-- Showing Color Palettes -->
+          <div class="color_box" style="background:  #ab3fdd">
+         </div>
         </div>
+        
     </article>     
     {% endfor %}
 {% endblock content %}
