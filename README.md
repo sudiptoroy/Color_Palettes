@@ -3,7 +3,6 @@ A web app to create, manage, and share color palettes.
 
 ### Prerequisite
 * Python 3
-* Django Latest Version
 
 ### Run on Local Machine
 
