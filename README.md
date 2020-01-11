@@ -27,7 +27,8 @@ A web app to create, manage, and share color palettes.
 Currently the web app is only working with manual input from admin page.
 
 ## N.B.
-Every features are not present at this moment
+* Every features are not present at this moment.
+* Note: type="color" is not supported in Internet Explorer 11 and earlier versions or Safari 9.1 and earlier versions.
 
 ### Future Updates
 * Create Color palettes.
