@@ -1,15 +1,9 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Home</title>
-    </head>
-    <body>
-        <h1>Color Palettes</h1>
-        {% for palettes in palettes_content %}
-            <h2>{{ palettes.title }}</h2>
-            <p>{{ palettes.author }} on {{ palettes.date_posted }}</p>  
-            <p>{{ palettes.content }}</p>
-            
-        {% endfor %}
-    </body>
-</html>
+{% extends 'palettes/base.html' %}
+{% block content %}
+    <!-- Loop through the palettes in palettes_content passed from palettes.views -->
+    {% for palettes in palettes_content %}
+        <h2>{{ palettes.title }}</h2>
+        <p>{{ palettes.author }} on {{ palettes.date_posted }}</p>  
+        <p>{{ palettes.content }}</p>       
+    {% endfor %}
+{% endblock content %}

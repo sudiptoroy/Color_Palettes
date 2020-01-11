@@ -20,7 +20,7 @@ palettes = [
 ]
 
 def home(request):
-    """Home page view for pallets app"""
+    """Home page view for palettes app"""
 
     # Import dummy data
     context = {
@@ -29,4 +29,5 @@ def home(request):
     return render(request, 'palettes/home.html', context)
 
 def about(request):
-    return render(request, 'palettes/about.html')
+    """ About page view for palettes app """
+    return render(request, 'palettes/about.html', {'title':'about'})
