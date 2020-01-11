@@ -11,13 +11,15 @@ A web app to create, manage, and share color palettes.
 * Create a virtualenv
 * Start virtual environment by `virtualenv env_name\Scripts\activate` [Windows]
 * Install the dependencies with requirements.txt
+* Install Crispy Forms by `pip install django-crispy-forms`
 * For migrations
   * Run the command `python manage.py makemigrations`
   * Run `python manage.py migrate`
 * Above command will create migrations file.
 * Create superuser `python manage.py createsuperuser`
   * Provide `username`, `email`, `password` 
-* After creating super user open browser and go to `http://127.0.0.1:8000/`
+* After creating super user start the project by `python manage.py runserver` 
+* Open browser and go to `http://127.0.0.1:8000/`
   * It will redirect you to login page
   * Provide username and password to login
   
