@@ -1,0 +1,25 @@
+{% extends 'palettes/base.html'%}
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'palettes/main.css' %}">
+{% block content %}
+    <h3>Create New Palette</h3>
+    <br>
+    <form action="">
+        <legend>
+        <h4> Choose 2 dominent color:</h4>
+            <input type="color" name="favcolor1" value="#ff0000">
+            <input type="color" name="favcolor2" value="#ff0000">
+        </legend>
+        <br><br>
+        <legend>
+        <h4> Choose 4 accent color:</h4>
+            <input type="color" name="favcolor3" value="#ff0000">
+            <input type="color" name="favcolor4" value="#ff0000">
+            <input type="color" name="favcolor5" value="#ff0000">
+            <input type="color" name="favcolor6" value="#ff0000">
+        </legend>
+        <br><br>
+        <button class="btn btn-outline-info" type="submit">Create</button>
+    </form>
+
+{% endblock content %}

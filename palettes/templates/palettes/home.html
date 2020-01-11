@@ -12,8 +12,11 @@
           </div>
           <h3><a class="article-title" href="#">{{ palettes.title }}</a></h3>
           <p class="article-content">{{ palettes.content }}</p>
+          {% with list1=palettes.content %}
+            
+          {%endwith%}
           <!-- Showing Color Palettes -->
-          <div class="color_box" style="background:  #ab3fdd">
+         <div class="color_box" style="background:  #ab3fdd">
          </div>
         </div>
         
